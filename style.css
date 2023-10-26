@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+
+}
+
+nav{
+    display: flex;
+    background-color:  #252525;
+    opacity: 1;
+    align-self: auto;
+    justify-content: space-between;
+    height: 69px;
+    
+}
+.nav_links_titulo{
+    display: flex;
+    margin: 15px  0 0 60px;
+    gap: 10px;
+}
+.nav__links{
+    display: flex;
+    margin: 15px ;
+    gap: 30px;
+}
+
+.img{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.titulo_pricipal{
+    color: white;
+    font-size: 30px;  
+    font-family: Roboto Serif 20pt;
+}
+.banner{
+    background-image: url(./assets/dogBranco.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 900px;
+    object-fit: fill; 
+}
+h1{
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 91px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    padding: 60px;
+}
+.banner__pataBranca{
+  position: absolute;
+  top: 400px;
+  right: 620px;
+}
+.banner_segundario{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/pitbull.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 900px;
+    object-fit: fill;
+    top: 768px;
+    left: 0.00048828125px;
+    
+}
+h2{
+    padding: 30px 15px 15px 40px;
+    font-size: 50px;
+}
+.texto_banner_segundario{
+    font-size: 29px;
+    padding: 40px;
+    width: 300px;
+}
+button{
+    width: 160px;
+    height: 45px;
+    border-radius: 40px;
+    background-color: rgb(54, 51, 51);
+    color: white;
+    border: none;
+}
+.mordomia{
+    background-image: url(./assets/dogPreto.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 900px;
+    object-fit: fill;
+}
+.apio{
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+footer{
+    display: flex;
+    background-color: rgb(194, 147, 174);
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+h3{
+    color: white;
+}
+footer li{
+    list-style: none;
+    color: white;
+}
+
