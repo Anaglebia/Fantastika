@@ -1,61 +1,70 @@
-*{
-    margin: 0;
 
+*{ 
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
 }
+
 
 nav{
     display: flex;
     background-color:  #252525;
     opacity: 1;
-    align-self: auto;
     justify-content: space-between;
-    height: 69px;
-    
+    height: 4.32rem;
+  
 }
 .nav_links_titulo{
     display: flex;
-    margin: 15px  0 0 60px;
-    gap: 10px;
+    margin: 0.93rem  0 0 3.75rem;
+    gap: 0.62rem;
 }
 .nav__links{
     display: flex;
-    margin: 15px ;
-    gap: 30px;
+    margin: 0.93rem;
+    gap: 1.87rem;
 }
 
 .img{
     background-color: #FFFFFF;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .titulo_pricipal{
     color: white;
-    font-size: 30px;  
+    font-size: 1.87rem;  
     font-family: Roboto Serif 20pt;
 }
 .banner{
     background-image: url(./assets/dogBranco.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 900px;
+    height: 50.25rem;
     object-fit: fill; 
 }
 h1{
     letter-spacing: 0.32px;
     color: #FFFFFF;
     text-align: center;
-    font-size: 91px;
+    font-size: 5.68rem;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-    padding: 60px;
+}
+main{
+    height: 100vh;
+    width: 100%;
 }
 .banner__pataBranca{
-  position: absolute;
-  top: 400px;
-  right: 620px;
+  position: relative;
+  left: 600px;
+  z-index: 3;
+  top: 4.25rem;
+  right: 38.75rem; 
 }
 .banner_segundario{
     display: flex;
@@ -63,56 +72,138 @@ h1{
     background-image: url(./assets/pitbull.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 900px;
-    object-fit: fill;
-    top: 768px;
-    left: 0.00048828125px;
-    
+    object-fit: fill;   
 }
-h2{
-    padding: 30px 15px 15px 40px;
-    font-size: 50px;
+.banner_segundario__itms{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
 }
-.texto_banner_segundario{
-    font-size: 29px;
-    padding: 40px;
-    width: 300px;
+ .banner_segundario__itms h2{
+    font-size: 3.56rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-left: 8.5rem;
+    margin-top: 180px;
+    color: #252525;
 }
+
+
+.banner_segundario__itms  pre{
+    font-size: 1.68rem;
+    font-family: 'Roboto, Regular';
+    color: #3A342F;
+    margin-left: 0.5rem;
+    margin-top: 30px;
+}
+.banner_segundario__itms a{
+    color: #FFFFFF;
+}
+
 button{
-    width: 160px;
-    height: 45px;
+    width: 248px;
+    height: 62px;
     border-radius: 40px;
     background-color: rgb(54, 51, 51);
     color: white;
     border: none;
+    margin-top: 6px;
+    margin-left: 9.87rem; 
+}
+a{
+    font-size: 27px;
+    color: #3A342F;
+    text-decoration: none;
 }
 .mordomia{
+    display: flex;
+    flex-direction: column;
     background-image: url(./assets/dogPreto.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    width: 100%;
-    height: 900px;
+    background-size: cover;
+    background-position: center;
+    height: 56.25rem;
     object-fit: fill;
+    
+}
+ pre{
+    font-size: 1.68rem;
+    color: #FFFFFF;
+    /* width: 25rem; */
+    /* padding: 1.87rem; */
+    margin: 10px 0px 0px 420px;
+}
+.mordomia h2{
+    color: #FFFFFF;
+    font-size:49px;
+    font-family: 'Roboto' sans-serif;
+    margin: 210px 0px 0px 740px;
+}
+.btn-mordomia{
+    width: 248px;
+    height: 62px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    margin-left: 760px;
 }
 .apio{
-    background-color: white;
     display: flex;
+    justify-content: space-around;
+    background-color: white;
     align-items: center;
+    height: 112px;
+}
+span{
+    font-family: 'Roboto Serif, Italic';
+    color: #FD6A9A;
+    font-size: 24px;
 }
 footer{
     display: flex;
-    background-color: rgb(194, 147, 174);
+    background-color: #EB4A7B;
     justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
+    text-align: left;
+    /* align-items: center; */
+    /* padding: 20px; */
+    line-height: 25px;
+
 }
 h3{
     color: white;
+    text-align: left;
+    margin-bottom: 12px;
+    margin-top: 8px;
 }
 footer li{
     list-style: none;
     color: white;
 }
 
+@media (max-width: 750px) { 
+
+.banner__pataBranca{
+    position: relative;
+    left: 300px;
+    z-index: 3;
+    top: 0.25rem;
+    right: 30.75rem; 
+
+}
+h1{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.banner_segundario{
+    
+}
+.apoio{
+    justify-content: space-between;
+}
+ }
